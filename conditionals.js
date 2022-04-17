@@ -86,6 +86,26 @@ console.log("I am 14. Which school should I go to?");
 console.log(whichSchool(14));
 */
 
+/*
+const whichSchool  = function (age) {
+  if (age < 13)  {
+    return 'Elementary School';//This code adds 'Elementary School' to the global 'choice' variable if the 'age' argument is less than 13.
+  } else if (age >= 13 && age <= 18) {
+    return 'Secondary School';//This code adds 'Secondary School' to the global 'choice' variable if the 'age' argument is more than or equal to 13 and less than or equal to 18;
+  } else {
+    return 'Lighthouse Labs';//This code adds 'Lighthouse Labs' to the global 'choice' variable if the 'age' argument is over 18.
+  }
+}
+  
+console.log("I am 35. Which school should I go to?");
+console.log(whichSchool(35));
+console.log("I am 8. Which school should I go to?");
+console.log(whichSchool(8));
+console.log("I am 14. Which school should I go to?");
+console.log(whichSchool(14));
+*/  
+
+
 /*___________/\/\/\*/
 
 
@@ -167,10 +187,10 @@ while (num >= 1) {
     -Main engine start (T-6 seconds)
     -Solid rocket booster ignition and liftoff! (T-0 seconds)
  */
+/*
 var tCount = 60;
 
 while (tCount >=0) {
-  console.log('T-'+tCount + ' seconds');
   if (tCount === 50) {
     console.log('Orbiter transfers from ground to internal power');
   }else if (tCount === 31) {
@@ -191,3 +211,120 @@ while (tCount >=0) {
   //countdown events messages
   //countdown liftoff message
 }
+*/
+
+/*___________________/\/\/\/\/\/\/\/\/\/H\_________________ */
+
+/*
+const amount = [61.00, 52.25, 112.99, 5.00];
+
+const total = 0;
+
+for (let i = 0; i< amounts.length; i++) {
+  total += amounts[i];
+}
+
+console.log('Order total is: ', total);
+
+
+for (let amount of amounts) {
+  total += amount;
+}
+
+console.log('Order total is: ', total);
+*/
+
+/*_________________________________________________________ */
+
+/*
+
+let haCount = '';
+
+function laugh(num) {
+  for (let i = 0; i <= num; i++) {
+    if (i === num){
+      haCount += '!';
+    }else {
+      haCount += 'ha';
+    }
+  }
+  return haCount
+}
+
+console.log(laugh(5));
+*/
+
+/*_______________________________________________________*/
+
+/*
+function isThisWorking(input) {
+  console.log("Printing: isThisWorking was called and " + input + " was passed in as an argument.");
+  return "Returning: I am returning this string!";
+}
+
+isThisWorking(3);
+console.log(isThisWorking(3));//this showes what the function returns vs what was logged to the console only within the function
+*/
+
+/*_________________________________________________________ */
+
+/*
+-triangle width input
+-fn to write each line
+-fn is called for same number of times as width input but,
+-each line gets smaller by one --> ***?do i need to store 
+ the new number in a variable for the loops or not?
+
+*/
+
+/*
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+      line += "* ";
+  }
+  return line + "\n";
+}
+
+
+function buildTriangle(totalWidth) {
+  let triangleStatement = '';
+
+  
+  for(let i = 1; i <= totalWidth; i++) {
+    triangleStatement += makeLine(i);
+  }
+  return triangleStatement;
+}
+
+
+console.log(buildTriangle(10));
+*/
+
+/*______________________________________________________*/
+
+/*
+var laugh = function (laughCount) {
+  let laughing = '';
+  for (let l = 0; l <= laughCount; l++) {
+    if (l === laughCount) {
+      laughing += '!';
+    }else {
+    laughing += 'ha';
+    }
+  }
+  return laughing;
+}
+
+console.log(laugh(10));
+*/
+
+/*______________________________________________________*/
+
+let cry = function boohoo () {
+  return 'boohoo!';
+}
+
+
+cry();
+console.log(cry());
