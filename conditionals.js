@@ -321,6 +321,7 @@ console.log(laugh(10));
 
 /*______________________________________________________*/
 
+/*
 let cry = function boohoo () {
   return 'boohoo!';
 }
@@ -328,3 +329,31 @@ let cry = function boohoo () {
 
 cry();
 console.log(cry());
+
+*/
+
+/*_____________________________________________________*/
+
+function emotions(myString, myFunc) {
+  console.log("I am " + myString + ", " + myFunc(2));
+}
+
+
+emotions ('happy', function (laughs) {
+  for(let l = 0; l < laughs; l++) {
+    let laugh = '';
+    laugh += 'ha';
+  }
+})
+
+emotions ('happy', function (laughCount) {
+  let laughing = '';
+  for (let l = 0; l <= laughCount; l++) {
+    if (l === laughCount) {
+      laughing += '!';
+    }else {
+    laughing += 'ha';
+    }
+  }
+  return laughing;
+  })
