@@ -334,6 +334,7 @@ console.log(cry());
 
 /*_____________________________________________________*/
 
+/*
 function emotions(myString, myFunc) {
   console.log("I am " + myString + ", " + myFunc(2));
 }
@@ -357,3 +358,121 @@ emotions ('happy', function (laughCount) {
   }
   return laughing;
   })
+  */
+
+/*____________________________________________________ */
+
+/*
+//looping - range:
+function range (start, end, step) {
+  let theArray = [];
+  for (let i = start; i <= end; i += step) {
+    if (step >= 0) {
+      theArray.push(i);
+    }else {
+      return [];
+    }
+  }
+  return theArray;
+}
+
+console.log(range(0, 10, 2));
+console.log(range(10, 30, 5));
+console.log(range(-5, 2, -3));
+*/
+
+//looping - lastIndexOf
+
+//takes array and value
+//returns index of the last occerance of value
+//if never return -1
+
+//!!--------------------RETURN TO-------------------------!!
+
+
+function lastIndexOf(array, checkValue) {
+  let matchValue = 0;
+  for(i = array.length - 1; i >= 0; i--) {
+    console.log(array[i], checkValue);
+    if (array[i] === checkValue) {
+      matchValue = i;
+      return;
+    }else if(array[i] === undefined) {
+      matchValue = -1;
+    }else {
+      matchValue = -1;
+    }
+  }
+  return matchValue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 4), "=?", 2);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 2), "=?", 4);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 3), "=?", -1);
+console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
+console.log(lastIndexOf([], 3), "=?", -1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--Concatinate Arrays--
+
+//when given two arrays, concatinate them into one
+//define function called concat
+
+/*
+function concat (array1, array2) {
+  let concatedArray = [];
+  for (let i = 0; i < array1.length; i++) {
+    concatedArray.push(array1[i])
+  }
+  for (let j = 0; j < array2.length; j++) {
+    concatedArray.push(array2[j])
+  }
+  return concatedArray;
+}
+
+console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
+console.log(concat([ 0, 3, 1 ], [ 9, 7, 2 ]), "=?", [ 0, 3, 1, 9, 7, 2 ]);
+console.log(concat([], [ 9, 7, 2 ]), "=?", [ 9, 7, 2 ]);
+console.log(concat([ 5, 10 ], []), "=?", [ 5, 10 ]);
+*/
+
+
+// 
